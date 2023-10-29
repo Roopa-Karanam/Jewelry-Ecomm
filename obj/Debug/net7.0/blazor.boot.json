@@ -201,13 +201,13 @@
       "mscorlib.dll": "sha256-X+o60j6cZnlI2vFFjdH81yYTAxx13\/wqnNSWTKbDsyw=",
       "netstandard.dll": "sha256-Cr6slBs\/R2v2t\/vecFDHbQHakbEhar0adYu0YemwiXI=",
       "System.Private.CoreLib.dll": "sha256-dDw5nzGJhW1jOjGfSJcs\/Mi4KQ+DZygXnoK+vJ+jHyk=",
-      "Jewelry-Ecomm.dll": "sha256-uguwQTrKydCS4q2DicbUQs+7zv3kcfrmgJiI2f1uwxg="
+      "Jewelry-Ecomm.dll": "sha256-YAw7sqi8mj4X7XLjJCaETt2B1ypNUB3BGHLdAwJskf4="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "Jewelry-Ecomm.pdb": "sha256-JssE3vhzV+9zBklUIfNogmLubiBOVKat1eE6qXh6+cI="
+      "Jewelry-Ecomm.pdb": "sha256-us9P0kvvhjKOfWJN8ivmssnKChH6ehNtF8ukWbG1qFw="
     },
     "runtime": {
       "dotnet.7.0.11.sf8asx8yhf.js": "sha256-RtIVigdAD1mUvR4pxoKyD8kcQgw4INP81v+PVSqkeQY=",
