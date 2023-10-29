@@ -1,0 +1,54 @@
+﻿@page "/jewelry/home"
+@inject HttpClient _http
+
+
+<MudContainer Class="d-flex ma-4">
+
+    @foreach (var item in allJewelry)
+    {
+        <MudCard Width="250px;" Class="mr-2">
+            <MudCardHeader>
+                <CardHeaderAvatar>
+                    <MudAvatar Color="Color.Secondary">@item.Id</MudAvatar>
+                </CardHeaderAvatar>
+                <CardHeaderContent>
+                    <MudText Typo="Typo.body1">@item.Name</MudText>
+                    <MudText Typo="Typo.body2">Peninsula in Europe</MudText>
+                </CardHeaderContent>
+
+            </MudCardHeader>
+            <MudCardMedia Image="@(item.ImageURL)" Height="250" />
+            <MudCardContent>
+                <MudText Typo="Typo.body2">Type - @item.Type</MudText>
+                <MudText Typo="Typo.body2">Price - @item.Price</MudText>
+            </MudCardContent>
+
+        </MudCard>
+
+    }
+
+</MudContainer>
+
+
+
+
+
+
+
+@code {
+    private List<JewelryVM> allJewelry = new List<JewelryVM>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await GetAllJewelryAsync();
+    }
+    private async Task GetAllJewelryAsync()
+    {
+
+       allJewelry= await _http.GetFromJsonAsync<List<JewelryVM>>("/api/Jewelry");
+
+    }
+}
+
+
+
